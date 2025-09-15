@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "4f3d",
+      "name": "gungun",
+      "lastName": "chawla ",
+      "email": "gungunchawla372@gmail.com",
+      "phoneNumber": "37637679",
+      "dateOfBirth": "2025-09-16",
+      "password": "gungun@123"
+    },
+    {
+      "id": "3cbf",
+      "name": "xyz",
+      "lastName": "ss",
+      "email": "gungunchawla372@gmail.com",
+      "phoneNumber": "84387958",
+      "dateOfBirth": "2025-09-25",
+      "password": "hhhh"
+    },
+    {
+      "id": "4e9a",
+      "name": "hss",
+      "lastName": "bhqdv",
+      "email": "gungunchawla372@gmail.com",
+      "phoneNumber": "789142384",
+      "dateOfBirth": "2025-09-19",
+      "password": "hhhhh"
+    }
+  ]
+}

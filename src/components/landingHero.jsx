@@ -1,20 +1,48 @@
 import React from 'react';
+import heroBackground from '../assets/WhatsApp Image 2025-09-10 at 18.06.37_eaf8ba1c.jpg';
 
 const LandingHero = () => {
   return (
-    <section className="bg-gradient-to-br from-gray-950 to-gray-800 text-white text-center py-40 px-4">
-      <div className="container mx-auto max-w-4xl">
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight drop-shadow-md">
-          Discover Your Next Adventure <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-teal-500"></span>
-          <br />
-          Personalized Itineraries at Your Fingertips
+    <section
+      className="relative h-screen flex items-center justify-center text-center text-white bg-fixed"
+      style={{
+        backgroundImage: `url(${heroBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed', // 🔑 parallax effect
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-4xl px-6">
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-lg">
+          Plan Your Perfect{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-500">
+            Journey
+          </span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-          Your personal trip planner and travel curator, creating custom itineraries tailored to your interests and budget.
+        <p className="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+          Seamlessly create and manage your travel itineraries. Explore new
+          destinations with a personalized touch.
         </p>
-        <a href="/signup" className="inline-block bg-teal-500 text-gray-900 font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 hover:bg-teal-400 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(45,212,191,0.6)]">
-          Get Started, It's Free
-        </a>
+
+        {/* Buttons */}
+        <div className="mt-10 flex justify-center space-x-6">
+          <a
+            href="/signup"
+            className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105"
+          >
+            Start Planning
+          </a>
+          <a
+            href="#features"
+            className="bg-white/80 text-gray-800 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-white transition-transform transform hover:scale-105"
+          >
+            Explore More
+          </a>
+        </div>
       </div>
     </section>
   );

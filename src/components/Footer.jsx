@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-950 text-gray-500 py-8 px-4 border-t border-gray-800">
+    <footer className="bg-gray-900 text-gray-500 py-8 px-4 border-t border-gray-800">
       <div className="container mx-auto text-center">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Tripio. All rights reserved.
